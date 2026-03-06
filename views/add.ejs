@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="header">
+
+    <div class="logo-container">
+        <div class="logo-box">
+            <span class="logo-icon">👤$</span>
+        </div>
+
+        <div class="logo-text">
+            <span class="employee">EMPLOYEE</span><br>
+            <span class="payroll">PAYROLL</span>
+        </div>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="card form-card">
+        <h2>Employee Payroll Form</h2>
+
+        <form method="POST" action="/add">
+
+            <!-- Name -->
+            <div class="form-row">
+                <label>Name</label>
+                <input type="text" name="Name" required></select>    
+            </div>
+
+            <!-- Profile Images -->
+            <div class="form-row">
+                <label>Profile image</label>
+                <div class="profile-options">
+                    <label>
+                        <input type="radio" name="profile" value="https://randomuser.me/api/portraits/women/44.jpg" required>
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg">
+                    </label>
+                    <label>
+                        <input type="radio" name="profile" value="https://randomuser.me/api/portraits/men/46.jpg">
+                        <img src="https://randomuser.me/api/portraits/men/46.jpg">
+                    </label>
+
+                    <label>
+                        <input type="radio" name="profile" value="https://randomuser.me/api/portraits/women/65.jpg">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg">
+                    </label>
+                    <label>
+                        <input type="radio" name="profile" value="https://randomuser.me/api/portraits/men/22.jpg">
+                        <img src="https://randomuser.me/api/portraits/men/22.jpg">
+                    </label>
+                </div>
+            </div>
+
+            <!-- Gender -->
+            <div class="form-row">
+                <label>Gender</label>
+                <div class="inline-options">
+                    <label><input type="radio" name="gender" value="Male" required> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                </div>
+            </div>
+
+            <!-- Department -->
+            <div class="form-row">
+                <label>Department</label>
+                <div class="inline-options">
+                    <label><input type="checkbox" name="department" value="HR"> HR</label>
+                    <label><input type="checkbox" name="department" value="Sales"> Sales</label>
+                    <label><input type="checkbox" name="department" value="Finance"> Finance</label>
+                    <label><input type="checkbox" name="department" value="Engineer"> Engineer</label>
+                    <label><input type="checkbox" name="department" value="Others"> Others</label>
+                </div>
+            </div>
+
+            <!-- Salary -->
+            <div class="form-row">
+                <label>Salary</label>
+                <select name="salary" required>
+                    <option value="">Select Salary</option>
+                    <option value="10000">10000</option>
+                    <option value="20000">20000</option>
+                    <option value="30000">30000</option>
+                    <option value="40000">40000</option>
+                </select>
+            </div>
+
+            <!-- Start Date -->
+            <div class="form-row">
+                <label>Start Date</label>
+                <div class="date-row">
+                    <select name="day" required>
+                        <option value="">Day</option>
+                        <% for(let i=1;i<=31;i++){ %>
+                            <option><%= i %></option>
+                        <% } %>
+                    </select>
+
+                    <select name="month" required>
+                        <option value="">Month</option>
+                        <option>Jan</option>
+                        <option>Feb</option>
+                        <option>Mar</option>
+                        <option>Apr</option>
+                        <option>May</option>
+                        <option>Jun</option>
+                        <option>Jul</option>
+                        <option>Aug</option>
+                        <option>Sep</option>
+                        <option>Oct</option>
+                        <option>Nov</option>
+                        <option>Dec</option>
+                    </select>
+
+                    <select name="year" required>
+                        <option value="">Year</option>
+                        <% for(let y=2015;y<=2026;y++){ %>
+                            <option><%= y %></option>
+                        <% } %>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Notes -->
+            <div class="form-row">
+                <label>Notes</label>
+                <textarea name="notes" rows="4"></textarea>
+            </div>
+
+            <!-- Buttons -->
+            <div class="form-buttons">
+                <a href="/" class="btn cancel">Cancel</a>
+                <button type="submit" class="btn submit">Submit</button>
+                <button type="reset" class="btn reset">Reset</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

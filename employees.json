@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1771565302487,
+    "name": "Radhika Sharma",
+    "department": "Sales",
+    "salary": 20000,
+    "profile": "https://randomuser.me/api/portraits/women/44.jpg"
+  },
+  {
+    "id": 1771565512745,
+    "name": "Praveen Bhagour",
+    "profile": "https://randomuser.me/api/portraits/men/22.jpg",
+    "gender": "Male",
+    "department": "Engineer",
+    "salary": 30000,
+    "startDate": "8 Jun 2018"
+  },
+  {
+    "id": 1771566107540,
+    "name": "Yash Awasthi",
+    "profile": "https://randomuser.me/api/portraits/men/46.jpg",
+    "gender": "Male",
+    "department": "Sales",
+    "salary": 20000,
+    "startDate": "3 Feb 2018"
+  },
+  {
+    "id": 1771566140710,
+    "name": "Siddharth Shamra",
+    "profile": "https://randomuser.me/api/portraits/men/22.jpg",
+    "gender": "Male",
+    "department": "Sales, Finance",
+    "salary": 30000,
+    "startDate": "10 Jun 2018"
+  },
+  {
+    "id": 1771566228733,
+    "name": "Kuldeep Singh Chahar",
+    "profile": "https://randomuser.me/api/portraits/men/22.jpg",
+    "gender": "Male",
+    "department": "Others",
+    "salary": 40000,
+    "startDate": "6 Feb 2024"
+  }
+]

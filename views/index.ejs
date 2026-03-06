@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Payroll</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="header">
+
+    <div class="logo-container">
+        <div class="logo-box">
+            <span class="logo-icon">👤$</span>
+        </div>
+
+        <div class="logo-text">
+            <span class="employee">EMPLOYEE</span><br>
+            <span class="payroll">PAYROLL</span>
+        </div>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="card">
+
+        <div class="top-bar">
+            <h2>Employee Details</h2>
+            <a href="/add" class="btn">+ Add User</a>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Salary</th>
+                    <th>Tax (12%)</th>
+                    <th>Net Salary</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <% employees.forEach(emp => { 
+                    const tax = emp.salary * 0.12;
+                    const net = emp.salary - tax;
+                %>
+                <tr>
+                    <td class="emp-info">
+                        <img src="<%= emp.profile %>" class="emp-img">
+                        <span><%= emp.name %></span>
+                    </td>
+                    <td><%= emp.department %></td>
+                    <td>₹ <%= emp.salary.toLocaleString() %></td>
+                    <td>₹ <%= tax.toFixed(2) %></td>
+                    <td>₹ <%= net.toFixed(2) %></td>
+                    <td class="actions">
+                        <a href="/delete/<%= emp.id %>" onclick="return confirm('Delete this employee?')">🗑</a>
+                        <a href="/edit/<%= emp.id %>">✏</a>
+                    </td>
+                </tr>
+                <% }) %>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+</body>
+</html>

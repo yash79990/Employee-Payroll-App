@@ -1,0 +1,239 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: #ffffff;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-box {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #7ca400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+.emp-info{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.emp-img{
+width:40px;
+height:40px;
+border-radius:50%;
+object-fit:cover;
+}
+.logo-icon {
+    font-size: 22px;
+    color: #7ca400;
+}
+
+.logo-text {
+    font-family: Arial, sans-serif;
+    line-height: 1.1;
+}
+
+.employee {
+    color: #7ca400;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.payroll {
+    color: #4a4a4a;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.container {
+    padding: 30px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 18px;
+    background: #82b440;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #3f4d5a;
+    color: white;
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.actions a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #3f4d5a;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.form-card {
+    max-width: 800px;
+    margin: auto;
+}
+
+.form-row {
+    margin-bottom: 20px;
+
+}
+
+/* Layout form rows as label + control on one line */
+.form-row {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.form-row label {
+    width: 160px;
+    margin: 0;
+    font-weight: 500;
+    color: rgba(80, 78, 78, 0.8);
+}
+
+/* Make form controls take remaining space */
+.form-row input[type="text"],
+.form-row input[type="number"],
+.form-row select,
+.form-row textarea,
+.form-row .profile-options,
+.form-row .inline-options,
+.form-row .date-row {
+    flex: 1;
+}
+
+.inline-options label {
+    margin-right: 20px;
+}
+
+.profile-options {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.profile-options img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.profile-options input {
+    margin-right: 5px;
+}
+
+.date-row {
+    display: flex;
+    gap: 20px;
+}
+
+textarea {
+    resize: none;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.submit {
+    background: #82b440;
+    color: white;
+}
+
+.cancel {
+    background: #dcdcdc;
+    color: black;
+}
+
+.reset {
+    background: #dcdcdc;
+}
+.reset:hover {
+    background: #000000;
+    color: white;  
+}
+.cancel:hover {
+    background: #c0c0c0;
+}
